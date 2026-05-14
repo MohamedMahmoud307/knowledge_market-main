@@ -1,0 +1,103 @@
+/* إعدادات عامة */
+body {
+    font-family: "Tahoma", Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(135deg, #4a90e2, #357ab7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* الجدول */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background: #4a90e2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background: #f2f6fc;
+}
+
+tr:hover {
+    background: #eaf2fb;
+    transition: 0.3s;
+}
+
+/* روابط الإجراءات */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+a[href*="edit_question"] {
+    background: #ffc107;
+    color: #fff;
+}
+
+a[href*="delete_question"] {
+    background: #dc3545;
+    color: #fff;
+}
+
+a[href*="vote.php"][href*="up"] {
+    background: #28a745;
+    color: #fff;
+}
+
+a[href*="vote.php"][href*="down"] {
+    background: #6c757d;
+    color: #fff;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* زر تسجيل خروج */
+.logout {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #357ab7;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.logout:hover {
+    background: #285a8e;
+}
